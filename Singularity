@@ -6,7 +6,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 MAINTAINER MathijsSanders
 
 %runscript
-#!/bin/bash
+bash
 THREADS=1
 MINALIGN=40
 
