@@ -7,6 +7,7 @@ MAINTAINER MathijsSanders
 
 %runscript
 
+exec /bin/bash /code/runScript.sh "$@"
 
 %post
 sed -i 's/$/ universe/' /etc/apt/sources.list
