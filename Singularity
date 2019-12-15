@@ -6,7 +6,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 MAINTAINER MathijsSanders
 
 %runscript
-bash
+
 THREADS=1
 MINALIGN=40
 
@@ -95,6 +95,7 @@ cd AnnotateBAMStatistics
 make all
 cp /tmp/AnnotateBAMStatistics/dist/Release/GNU-Linux/AnnotateBAMStatistics /usr/bin/
 rm -rf /tmp/AnnotateBAMStatistics	
+sed -i 's/bin\/sh/bin\/bash/' /.singularity.d/runscript
 
 %environment
 export PATH=$PATH:/usr/games
